@@ -1,0 +1,3 @@
+[submodule "craftos.d.ts"]
+	path = craftos.d.ts
+	url = https://github.com/LoganDark/craftos.d.ts
