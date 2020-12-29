@@ -99,3 +99,13 @@ will translate before attempting a serious project using this base.
   information about the different annotations you can use.
 
 - Maybe more? Submit a pull request or even just an issue :)
+
+## Getting Help
+
+Most likely, the people in the ComputerCraft Discord won't know much about
+transpilation from TypeScript to Lua. Since this repository does not contain
+anything custom, you should be able to look up help pertaining to
+TypeScriptToLua specifically, and that should apply fine here (since that is the
+transpiler we're using, after all).
+
+GitHub Discussions is also enabled on this repository if you need more help.
