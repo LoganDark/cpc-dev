@@ -91,12 +91,15 @@ will translate before attempting a serious project using this base.
   It's a type-safe way to declare that the function does not have a `this`, and
   TSTL will pick up on it and not add a `self`.
 
-- In order to use some Lua features from TS, you might need to use annotations.
-  For example, if your function needs to return multiple values to the Lua side
-  (mandatory if you're creating a redirect object for example), you will need an
-  `@tupleReturn` annotation. Check out the [TypeScriptToLua documentation](
-  https://typescripttolua.github.io/docs/advanced/compiler-annotations) for more
-  information about the different annotations you can use.
+- In order to use some Lua features from TS, you might need to use language
+  extensions. For example, if your function needs to return multiple values to
+  the Lua side (mandatory if you're creating a redirect object for example), you
+  will need `$multi` (or `MultiReturn` in type form). Check out the
+  [TypeScriptToLua documentation](
+  https://typescripttolua.github.io/docs/advanced/language-extensions).
+  Additionally, you may need to use [compiler annotations](
+  https://typescripttolua.github.io/docs/advanced/compiler-annotations) to
+  represent things like varargs (`...`).
 
 - Maybe more? Submit a pull request or even just an issue :)
 

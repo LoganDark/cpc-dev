@@ -5,6 +5,7 @@
 		"lib": ["esnext"],
 		"sourceMap": true,
 		"strict": true,
+		"types": ["typescript-to-lua/language-extensions"],
 		"rootDir": "src"
 	},
 	"exclude": [
