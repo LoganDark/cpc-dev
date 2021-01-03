@@ -101,6 +101,13 @@ will translate before attempting a serious project using this base.
   https://typescripttolua.github.io/docs/advanced/compiler-annotations) to
   represent things like varargs (`...`).
 
+- When working with `MultiReturn`, TSTL is still kind of glitchy as the feature
+  is new. Whenever you genuinely want to wrap a `MultiReturn` in an array, you
+  must explicitly spread it inside of a list (a la `[...functionCall()]`).
+  Otherwise, TSTL will generate invalid code or throw cryptic TypeScript errors.
+  `string.byte(...)[0]` is invalid, you MUST do `[...string.byte(...)][0]`, or
+  else TSTL will generate `string.byte(...)[1]` which is invalid.
+
 - Maybe more? Submit a pull request or even just an issue :)
 
 ## Getting Help
